@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#header{
+background-color: rgb(255, 255, 255);
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+padding: 5px 10%;
+}
+#header img {
+height: 85px;
+width: 85px;
+border-radius: 50px;
+border-style: ridge;
+
+}
+#header img:hover{
+    transform: scale(1.1);
+}
+#header #nav-links{
+    list-style: none;
+}
+#header #nav-links li{
+    display: inline-block;
+    padding: 25px;
+}
+#header #nav-links a{
+    font-size: 700;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+#header #nav-links li a:hover{
+   color: rgb(224, 72, 72);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+.slide{
+    width: 100vw;
+    max-width: 1350px;
+    height: 720px;
+    overflow: hidden;
+}
+
+
+.slide ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    
+
+    animation: slide 20s infinite ;
+}
+@keyframes slide {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    20% {margin-left: -100%;}
+    30% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    70% {margin-left: -300%;}
+}
+#contenido{
+    background-color: rgb(255, 255, 255);
+    min-height: 700px;
+    padding: 15px;
+    float: right;
+    box-sizing: border-box;
+}
+#contenido h2{
+ text-align: center;
+ margin-bottom: 100px;
+}
+#contenido p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 25px;
+}
+.img-zq{
+    float: left;
+    border-radius: 10px;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+#list{
+    text-align: center;
+    list-style: none;
+}
+h2{
+    text-align: center;
+}
+ul, li{
+    list-style: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.preguntas-frecuentes {
+    margin-top: 20px;
+}
+
+.pregunta {
+    margin-bottom: 10px;
+}
+
+.respuesta {
+    margin-left: 20px;
+}
